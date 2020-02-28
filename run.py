@@ -44,13 +44,13 @@ navbar = dbc.NavbarSimple(
 footer = dbc.Container(dbc.Row(dbc.Col(html.P([
     html.Span("I am awesome", className="mr-2"),
     html.A(html.I(className="fas fa-envelope-sqaure mr-1"),
-                  href="/"),
+                  href="http://www.google.com"),
     html.A(html.I(className="fab fa-github-square mr-1"),
-                  href="/"),
+                  href="http://www.google.com"),
     html.A(html.I(className="fab fa-linkedin-square mr-1"),
-                  href="/"),
+                  href="http://www.google.com"),
     html.A(html.I(className="fab fa-twitter-square mr-1"),
-                  href="/")
+                  href="http://www.google.com")
     ],
     className="lead"))))
 

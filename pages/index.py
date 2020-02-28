@@ -35,9 +35,7 @@ column_2 = dbc.Col([
     md=6)
 
 # Build the grid using these elements
-layout = (dbc.Row([top]),
-          dbc.Row([column_1, column_2]))
+layout = dbc.Row([top]), dbc.Row([column_1, column_2])
 
 
 # END
-
