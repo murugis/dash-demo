@@ -24,7 +24,7 @@ infile.close()
         page elements.
 """
 
-
+# Define the first element on the page
 element_1 = dbc.Col([
     html.Div([
         html.P([
@@ -67,6 +67,7 @@ element_1 = dbc.Col([
     ])
 ])
 
+# Define the second element on the page
 element_2 = dbc.Col([
     html.Div([
         html.P([
@@ -78,7 +79,10 @@ element_2 = dbc.Col([
             id = "my_graph",
             figure = {
                 "data" : [
-                    {"x" : [1,2,3,4,5], "y" : [2,4,8,4,2], "type" : "bar", "name" : "awesome_graph"}
+                    {"x" : [1,2,3,4,5],
+                    "y" : [2,4,8,4,2],
+                    "type" : "bar",
+                    "name" : "awesome_graph"}
                 ],
                 "layout" : {"title":"Mah awesome graph"}
             }
@@ -106,3 +110,5 @@ def dropdown_selection(input1):
     return f"You selected {input1} for input1."
 
 layout = dbc.Row([element_1, element_2])
+
+# END

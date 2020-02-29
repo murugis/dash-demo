@@ -16,8 +16,11 @@ import dash_html_components as html
     bootswatch template. Use this template to give yourself fast styling
     options.
 """
-ext_style = [dbc.themes.DARKLY,
-             "https://use.fontawesome.com/a5d39b00dd.css"]
+fa_bootstrap = "https://stackpath.bootstrapcdn.com/font-awesome/"
+ext_style = [
+    dbc.themes.DARKLY,
+    f"{fa_bootstrap}4.7.0/css/font-awesome.min.css"
+]
 
 """
     Meta tags are meta

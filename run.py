@@ -41,18 +41,45 @@ navbar = dbc.NavbarSimple(
     ],
     sticky="top")
 
-footer = dbc.Container(dbc.Row(dbc.Col(html.P([
-    html.Span("I am awesome", className="mr-2"),
-    html.A(html.I(className="fas fa-envelope-sqaure mr-1"),
-                  href="http://www.google.com"),
-    html.A(html.I(className="fab fa-github-square mr-1"),
-                  href="http://www.google.com"),
-    html.A(html.I(className="fab fa-linkedin-square mr-1"),
-                  href="http://www.google.com"),
-    html.A(html.I(className="fab fa-twitter-square mr-1"),
-                  href="http://www.google.com")
-    ],
-    className="lead"))))
+footer = dbc.Container(
+    dbc.Row(
+        dbc.Col(
+            html.P(
+            [
+                html.Span(
+                    "I am awesome",
+                    className="mr-2 text-muted small"
+                ),
+                html.A(
+                    html.I(
+                        className="fa-envelope mr-1"
+                    ),
+                href="mailto:bmulas@mail.com"
+                ),
+                html.A(
+                    html.I(
+                        className="fa-github mr-1"
+                    ),
+                href="http://www.google.com"
+                ),
+                html.A(
+                    html.I(
+                        className="fa-linkedin mr-1"
+                    ),
+                href="http://www.google.com"
+                ),
+                html.A(
+                    html.I(
+                        className="fa-twitter mr-1"
+                    ),
+                href="http://www.google.com"
+                )
+            ],
+            className="lead"
+            )
+        )
+    )
+)
 
 # Establish layout
 app.layout = html.Div([dcc.Location(id='url', refresh=False),

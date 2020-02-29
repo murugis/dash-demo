@@ -13,6 +13,10 @@ scikit-learn = "*"
 plotly = "*"
 gunicorn = "*"
 matplotlib = "*"
+shap = "*"
+seaborn = "*"
+category-encoders = "*"
+ipython = "*"
 
 [requires]
 python_version = "3.7"
